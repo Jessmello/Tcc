@@ -1,5 +1,5 @@
 package com.age.soc.business;
-
+//https://stackoverflow.com/questions/15927014/rotating-an-image-90-degrees-in-java
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;

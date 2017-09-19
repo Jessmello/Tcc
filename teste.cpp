@@ -277,8 +277,8 @@ int main(int argc, char* argv[]){
   images.push_back(vec18);
   images.push_back(vec19);
   images.push_back(vec20);*/
-  int n = 463+213;
-  int y = 213;
+ int y = 1252;
+  int n = 788+y;
   int i = 0;
   for(i; i < y; i++){
     tiny_dnn::image<> bgr_img(argv[i+1], image_type::grayscale);
@@ -304,7 +304,7 @@ int main(int argc, char* argv[]){
       << fc(5*13*40, 200) << relu() 
       << fc(200, 2) << sigmoid();
 
-  int n_train_epochs=50;
+  int n_train_epochs=5000;
   int n_minibatch=10;
 
   adagrad optimizer;
